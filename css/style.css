@@ -56,6 +56,10 @@ button:focus {
 }
 
 /* Common */
+.link:hover{
+  cursor:pointer;
+}
+
 .section {
   padding: 4rem;
   text-align: center;
@@ -171,7 +175,7 @@ button:focus {
 /* About */
 .majors {
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   gap: 1rem;
   margin: 2.5rem 0;
 }
@@ -230,7 +234,7 @@ button:focus {
 
 .skills {
   display: grid;
-  grid-template-columns: 6fr 4fr;
+  grid-template-columns: 5fr 5fr;
   margin: 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
@@ -247,7 +251,6 @@ button:focus {
 }
 
 .skills__coding {
-  grid-row: span 2;
   padding: 1rem;
   background-color: var(--color-primary);
 }
@@ -287,7 +290,7 @@ button:focus {
 
 /* Work */
 #work {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-variant);
   color: var(--color-text);
 }
 
