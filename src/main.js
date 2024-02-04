@@ -18,7 +18,7 @@ document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
-// Arrow up -> 
+// Arrow up -> transparent at top
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
   if (window.scrollY > homeHeight / 2) {
@@ -28,14 +28,14 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// Navbar 토글버튼 클릭 처리
+// Navbar toggle button click control
 const navbarMenu = document.querySelector('.header__menu');
 const navbarToggle = document.querySelector('.header__toggle');
 navbarToggle.addEventListener('click', () => {
   navbarMenu.classList.toggle('open');
 });
 
-// Navbar 메뉴 클릭시 메뉴를 자동으로 닫아줌
+// Navbar menu click ->
 navbarMenu.addEventListener('click', () => {
   navbarMenu.classList.remove('open');
 });

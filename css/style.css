@@ -388,7 +388,7 @@ button:focus {
 }
 
 /* Testimonial */
-.testimonials {
+/* .testimonials {
   margin: 3rem;
 }
 
@@ -420,7 +420,7 @@ button:focus {
   color: var(--color-accent);
   font-weight: bold;
   filter: brightness(70%);
-}
+} */
 
 /* Arrow up */
 .arrow-up {
