@@ -1,6 +1,6 @@
 'use strict';
 
-// Header에 페이지 아래로 스크롤시 다크 스타일링 적용
+// In Header, if down scroll -> dark style effect
 const header = document.querySelector('.header');
 const headerHeight = header.offsetHeight;
 document.addEventListener('scroll', () => {
@@ -11,14 +11,14 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// Home 섹션을 아래로 스크롤시 투명하게 처리함
+// In Home, if down scroll -> transparent
 const home = document.querySelector('.home__container');
 const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
-// Arrow up버튼을 아래로 스크롤시 투명하게 처리함
+// Arrow up -> 
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
   if (window.scrollY > homeHeight / 2) {
